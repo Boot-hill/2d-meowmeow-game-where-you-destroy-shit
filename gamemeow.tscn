@@ -1,7 +1,22 @@
 [gd_scene format=3 uid="uid://ba7fbi4jxxcf1"]
 
-[node name="Node2D" type="Node2D" unique_id=1918976065]
-visible = false
+[ext_resource type="PackedScene" uid="uid://cu1hxsfd8ljoo" path="res://meow_meow_player.tscn" id="1_e7t0r"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203235094]
-debug_color = Color(0.78039217, 0, 0.27450982, 0.6313726)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_e7t0r"]
+distance = -13.0
+
+[node name="Ge-mu" type="Node2D" unique_id=523107490]
+
+[node name="meow meow player" parent="." unique_id=1656381352 instance=ExtResource("1_e7t0r")]
+position = Vector2(1, -6)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=758278555]
+position = Vector2(0, -7)
+zoom = Vector2(4, 4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=878397510]
+position = Vector2(0, -11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=696987264]
+position = Vector2(0, -2)
+shape = SubResource("WorldBoundaryShape2D_e7t0r")
