@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ba7fbi4jxxcf1"]
+
+[node name="Node2D" type="Node2D" unique_id=1918976065]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203235094]
+debug_color = Color(0.78039217, 0, 0.27450982, 0.6313726)
