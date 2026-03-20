@@ -75,7 +75,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pn4ao"]
-radius = 6.519202
+radius = 6.5
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1656381352]
 script = ExtResource("1_pn4ao")
@@ -89,5 +89,5 @@ frame = 2
 frame_progress = 0.5215655
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1614718339]
-position = Vector2(-0.5, -11.5)
+position = Vector2(-0.5, -11)
 shape = SubResource("CircleShape2D_pn4ao")
